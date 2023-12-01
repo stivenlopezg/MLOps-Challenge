@@ -1,0 +1,12 @@
+Argumentos de la línea de comandos: ['app/steps/run_step.py', 'prediction', 'http://localhost:2020', 'domain_classification']
+2023-12-01 02:24:37 - INFO - El proceso de inferencia ha comenzado correctamente.
+2023-12-01 02:24:37 - INFO - Se ha cargado el cliente de MlFlow
+2023-12-01 02:24:37 - INFO - Se ha cargado el dataset correctamente. El dataset tiene 150 observaciones.
+2023-12-01 02:24:37 - INFO - Ha empezado el proceso de descarga de artefactos.
+2023-12-01 02:24:37 - INFO - Se han descargado los artefactos en la carpeta app/inference/.
+2023-12-01 02:24:37 - INFO - Se ha cargado el tokenizer para hacer el preprocesamiento de texto.
+2023-12-01 02:24:37 - INFO - Ha iniciado el proceso de preprocesamiento de texto.
+2023-12-01 02:24:37 - INFO - Ha finalizado correctamente el preprocesamiento de texto. La dimensión de la matriz es 150x30
+2023-12-01 02:24:37 - INFO - Se ha instanciado el modelo LSTM.
+2023-12-01 02:24:38 - INFO - Ha comenzado el proceso de predicción ...
+2023-12-01 02:24:38 - INFO - El proceso de predicción ha finalizado correctamente. Se ha demorado 0.0045318603515625 sgs.
