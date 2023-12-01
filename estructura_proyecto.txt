@@ -1,0 +1,50 @@
+.
+├── Dockerfile
+├── README.md
+├── app
+│   ├── builders
+│   │   ├── build_models.py
+│   │   └── model_builders
+│   │       ├── __init__.py
+│   │       ├── keras_builder.py
+│   │       ├── sklearn_builder.py
+│   │       └── xgboost_builder.py
+│   ├── config
+│   │   ├── __init__.py
+│   │   └── config.py
+│   ├── data
+│   │   ├── dataset_items.csv
+│   │   ├── inference.csv
+│   │   ├── test.csv
+│   │   ├── train.csv
+│   │   └── validation.csv
+│   ├── modeling
+│   │   ├── __init__.py
+│   │   ├── evaluation.py
+│   │   └── tuning.py
+│   ├── preprocessing
+│   │   ├── __init__.py
+│   │   └── text.py
+│   ├── steps
+│   │   ├── __init__.py
+│   │   ├── inference
+│   │   │   ├── __init__.py
+│   │   │   └── inference.py
+│   │   ├── run_step.py
+│   │   └── training
+│   │       ├── __init__.py
+│   │       └── training.py
+│   └── utilities
+│       ├── __init__.py
+│       └── utils.py
+├── estructura_proyecto.txt
+├── inference_logs.txt
+├── notebooks
+│   ├── inference.ipynb
+│   ├── modeling.ipynb
+│   └── split_data.ipynb
+├── poetry.lock
+├── pyproject.toml
+└── training_logs.txt
+
+13 directories, 35 files
