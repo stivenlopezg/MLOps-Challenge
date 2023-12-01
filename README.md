@@ -21,8 +21,6 @@ Un proyecto de Machine Learning, tiene diferentes etapas, por ejemplo:
 
 ## Estructura del Proyecto
 
-Explicación breve de la estructura del proyecto y el propósito de cada directorio principal.
-
 ```plaintext
 ├── app
 │   ├── builders
@@ -41,6 +39,45 @@ Explicación breve de la estructura del proyecto y el propósito de cada directo
 ├── README.md
 └── training_logs.txt
 ```
+
+### Módulos
+
+#### 1. builders
+
+El módulo `builders` contiene funciones y clases que definen hypermodels para el entrenamiento utilizando optimización de hiperparámetros bayesianos.
+
+#### 2. config
+
+El módulo `config` instancia variables de configuración para el proyecto.
+
+#### 3. data
+
+La carpeta `data` contiene los set de datos partidos para entrenar, validar o testear los modelos.
+
+#### 4. modeling
+
+En el módulo `modeling`, se encuentra una clase que facilita la evaluación de modelos de clasificación. Incluye métricas principales y la matriz de confusión. Además también contiene un módulo que instancia el modelo con los hiperparametros a optimizar en el entrenamiento.
+
+#### 5. preprocessing
+
+El módulo `preprocessing` contiene funciones relacionadas con la preparación de datos de texto antes del entrenamiento.
+
+#### 6. steps
+
+El módulo `steps` contiene un script principal del proyecto. Basado en el tipo de ejecución, realiza entrenamientos de modelos o predicciones en batch.
+
+#### 7. utilities
+
+El módulo `utilities` incluye funciones útiles para tareas repetitivas y generales en el proyecto.
+
+### Archivos Adicionales
+
+- `notebooks`: Directorio que contiene Jupyter Notebooks para análisis exploratorio o prototipado.
+- `Dockerfile`: Archivo de configuración para la creación de contenedores Docker.
+- `estructura_proyecto.txt`: Descripción de la estructura del proyecto.
+- `inference_logs.txt`: Archivo de registros para la predicción en batch.
+- `poetry.lock` y `pyproject.toml`: Archivos relacionados con la gestión de dependencias utilizando Poetry.
+- `training_logs.txt`: Archivo de registros cuando se ejecuta el entrenamiento.
 
 # Development
 
@@ -159,6 +196,8 @@ El script recibe tres argumentos, donde el primero indica si debe hacer el entre
 * `prediction`:
   * El argumento `tracking_uri` sirve para definir en que servidor está todos los artefactos y modelos guardados para usar en **"producción"**.
   * El argumento `experiment_name` es el nombre del experimento se van a buscar todas las ejecuciones.
+
+# 
 
 ## Monitoreo
 
