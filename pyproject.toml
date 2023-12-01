@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["Stiven Lopez <stivenlopezg2@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9, <3.11"
+pandas = "^2.1.3"
+scikit-learn = "^1.3.2"
+tensorflow = "^2.15.0"
+keras-tuner = "^1.4.6"
+xgboost = "^2.0.2"
+fastapi = "^0.104.1"
+uvicorn = "^0.24.0.post1"
+cloudpickle = "^3.0.0"
+seaborn = "^0.13.0"
+evidently = "^0.4.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
